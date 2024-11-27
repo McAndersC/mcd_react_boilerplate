@@ -1,6 +1,6 @@
 .wrapper {
 
-    background-color: antiquewhite;
+    background-color: pink;
 
     &.fullscreen {
         height : 100vh;
