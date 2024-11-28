@@ -3,6 +3,8 @@ import { useRoutes } from "react-router-dom";
 import HomePage from "./pages/home/HomePage";
 import Navigation from "./components/Navigation/Navigation";
 import SubscribersPage from "./pages/subscribers/SubscribersPage";
+import SubscriberView from "./components/Subscribers/SubscriberView";
+import SubscribersBackofficePage from "./pages/backoffice/subscribers/SubscribersPage";
 
 // Application
 const App = () => {
@@ -18,6 +20,14 @@ const App = () => {
             {
               path: "/subscribers",
               element : <SubscribersPage></SubscribersPage>
+            },
+            {
+              path: "/subscribers/:id",
+              element : <SubscriberView></SubscriberView>
+            },
+            {
+              path: "/backoffice/subscribers",
+              element : <SubscribersBackofficePage></SubscribersBackofficePage>
             },
             {
               path: "/users",

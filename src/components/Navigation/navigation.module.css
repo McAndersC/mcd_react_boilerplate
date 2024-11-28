@@ -1,8 +1,19 @@
 .navigation {
+
     background-color: red;
     padding : 20px;
-    margin: 10px 10px 10px 10px;
-    border-radius: 0 0 0 10px;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+
+    }
 
     svg {
 
